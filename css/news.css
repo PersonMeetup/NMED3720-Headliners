@@ -1,0 +1,60 @@
+:root {
+    --clr-neutral-50: #f6f6f6;
+    --clr-neutral-100: #e1e1e1;
+    --clr-neutral-500: #626262;
+    --clr-neutral-800: #181818;
+    --clr-primary-600: #713804;
+
+    --border: 0.175rem solid var(--clr-neutral-500);
+}
+
+body {
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-neutral-800);
+}
+
+a {
+    color: var(--clr-neutral-800);
+}
+a:hover {
+    text-decoration: none;
+}
+a:visited {
+    color: var(--clr-primary-600);
+}
+
+main {
+    padding: 0 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.small {
+    font-size: 1.175rem;
+}
+.large {
+    font-size: 1.375rem;
+}
+/* .large {
+    font-size: 1.625rem;
+} */
+
+.headline.small {
+    padding: 0.5rem 0.375rem;
+}
+.headline.large {
+    padding: 0.75rem 0.5rem;
+}
+.headline:not(:first-child) {
+    border-top: var(--border);
+}
+
+.thumbnail {
+    margin-bottom: 1.5rem;
+}
+.thumbnail img {
+    width: 100%;
+    margin-bottom: 0.325rem;
+}
+.thumbnail h3 {
+    padding: 0.5rem;
+}

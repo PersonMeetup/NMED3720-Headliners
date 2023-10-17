@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Headlines</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/news.css">
+    <style @raw="getBundle('css')" webc:keep></style>
+</head>
+<body>
+    <layout-header></layout-header>
+    <main @html="this.content"></main>
+    <layout-footer></layout-footer>
+</body>
+</html>

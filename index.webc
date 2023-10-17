@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<h1>Hello, world!</h1>
-	<p>Compiled using WebC!</p>
-	<headline @size="small" @pos="11">Just like that</headline>
-	<thumbnail @size="large" @pos="15"></thumbnail>
-	<hr>
-	<headline webc:for="(item, index) of articles" @size="small" :@pos="index + 1">
+---
+layout: base.webc
+---
+<news-headline @size="small" @pos="11">Child Held At Gunpoint Does Wicked Flip</news-headline>
+<news-headline @size="large" @pos="11">Child Held At Gunpoint Does Wicked Flip</news-headline>
+<news-headline @size="large" @pos="11">Child Held At Gunpoint Does Wicked Flip</news-headline>
+<news-thumbnail @size="small" @pos="15" src="/majima.png">This Man Ate My Son</news-thumbnail>
+<news-thumbnail @size="small" @pos="15" src="/majima.png">This Man Ate My Son</news-thumbnail>
+<news-thumbnail @size="large" @pos="15" src="/majima.png">This Man Ate My Son</news-thumbnail>
+<hr>
+<div>
+	<news-headline webc:for="(item, index) of articles" @size="small" :@pos="index + 1" :@url="item.url">
 		<template @text="item.title" webc:nokeep></template>
-	</headline>
-</body>
-</html>
+	</news-headline>
+</div>

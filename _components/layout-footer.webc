@@ -1,0 +1,9 @@
+<footer webc:root="override">
+    <p>Placeholder</a></p>
+</footer>
+<style webc:scoped>
+    :host {
+        background-color: var(--clr-neutral-50);
+        border-top: solid 0.25rem var(--clr-neutral-500);
+    }
+</style>
