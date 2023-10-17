@@ -1,0 +1,3 @@
+<div :class="'headline ' + size" :id="pos" webc:root="override">
+	<h3><slot>Generic Headline</slot></h3>
+</div>
