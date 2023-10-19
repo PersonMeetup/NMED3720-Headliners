@@ -1,2 +1,2 @@
 // Set the amount of articles
-exports.elementCount = 15;
+exports.elementCount = 50;
