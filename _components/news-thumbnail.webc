@@ -1,6 +1,6 @@
-<div :class="'thumbnail ' + size" :id="pos" webc:root="override">
+<div :class="'thumbnail ' + size" :id="this.uid" webc:root="override">
 	<figure>
 		<img :src="src" :alt="alt">
-		<h3><a :href="url"><slot>Generic Headline</slot></a></h3>
+		<h3><a href="#"><slot>Generic Headline</slot></a></h3>
 	</figure>
 </div>

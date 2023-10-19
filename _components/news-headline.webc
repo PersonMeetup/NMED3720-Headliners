@@ -1,3 +1,3 @@
-<div :class="'headline ' + size" :id="pos" webc:root="override">
-	<h3><a :href="url"><slot>Generic Headline</slot></a></h3>
+<div :class="'headline ' + size" :id="this.uid" webc:root="override">
+	<h3><a href="#"><slot>Generic Headline</slot></a></h3>
 </div>

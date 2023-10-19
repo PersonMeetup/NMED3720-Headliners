@@ -1,5 +1,7 @@
 <footer webc:root="override">
-    <p>Placeholder</a></p>
+    <p>This work is licensed under a<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
+    <p>Built by Leslie "<a href="https://personmeetup.ca/">Person Meetup</a>" Swan for "The Dynamic Web" course at the<a href="https://www.ulethbridge.ca/">University of Lethbridge</a></p>
+    <p>For more information, check the project's GitHub respository</p>
 </footer>
 <style webc:scoped>
     :host {

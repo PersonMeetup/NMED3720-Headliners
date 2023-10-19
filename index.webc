@@ -1,15 +1,4 @@
 ---
 layout: base.webc
 ---
-<news-headline @size="small" @pos="11">Child Held At Gunpoint Does Wicked Flip</news-headline>
-<news-headline @size="large" @pos="11">Child Held At Gunpoint Does Wicked Flip</news-headline>
-<news-headline @size="large" @pos="11">Child Held At Gunpoint Does Wicked Flip</news-headline>
-<news-thumbnail @size="small" @pos="15" src="/majima.png">This Man Ate My Son</news-thumbnail>
-<news-thumbnail @size="small" @pos="15" src="/majima.png">This Man Ate My Son</news-thumbnail>
-<news-thumbnail @size="large" @pos="15" src="/majima.png">This Man Ate My Son</news-thumbnail>
-<hr>
-<div>
-	<news-headline webc:for="(item, index) of articles" @size="small" :@pos="index + 1" :@url="item.url">
-		<template @text="item.title" webc:nokeep></template>
-	</news-headline>
-</div>
+<news-template webc:for="item of [...Array(elementCount).keys()]"></news-template>

@@ -1,0 +1,18 @@
+<script webc:type="js">
+	function chance(num) {
+		return Math.floor(Math.random() * num) === 0;
+	}
+	const thumbnail = chance(2);
+	if (thumbnail) {
+		const thumbSize = chance(4) ? "large" : "small";
+		`<news-thumbnail @size="${thumbSize}" src="/majima.png">This Man Ate My Son</news-thumbnail>`
+	} else {
+		`
+		<div>
+			<news-headline @size="large">Child Held At Gunpoint Does Wicked Flip</news-headline>
+			<news-headline @size="small">Child Held At Gunpoint Does Wicked Flip</news-headline>
+			<news-headline @size="small">Child Held At Gunpoint Does Wicked Flip</news-headline>
+		</div>
+		`
+	}
+</script>
