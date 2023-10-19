@@ -11,6 +11,7 @@
 body {
 	background-color: var(--clr-neutral-100);
 	color: var(--clr-neutral-800);
+	font-family: 'Lora', sans-serif;
 }
 
 a {
@@ -21,4 +22,10 @@ a:hover {
 }
 a:visited {
 	color: var(--clr-primary-600);
+}
+
+img::before {
+	background-color: var(--clr-neutral-500);
+	display: block;
+	padding: 0.5rem;
 }

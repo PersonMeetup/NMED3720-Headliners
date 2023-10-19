@@ -5,6 +5,7 @@ const { elementCount } = require("./projectConfig");
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginWebc);
 	eleventyConfig.addWatchTarget("css")
+	eleventyConfig.addPassthroughCopy("fonts")
 	// eleventyConfig.addPassthroughCopy('js');
 
 	eleventyConfig.addGlobalData("elementCount", elementCount);

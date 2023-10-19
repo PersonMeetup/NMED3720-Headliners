@@ -31,6 +31,7 @@ main {
     object-fit: cover;
 }
 .thumbnail.small {
+    container-type: inline-size;
     border: var(--border);
     margin-bottom: 0.325rem;
 }
@@ -41,6 +42,12 @@ main {
 }
 .thumbnail.large {
     margin-bottom: 1.5rem;
+}
+
+@container (height >= 10rem) {
+    .thumbnail.small figure {
+        display: block;
+    }
 }
 
 @media (width >= 45rem) {
@@ -59,9 +66,6 @@ main {
     }
     .thumbnail.small img {
         max-height: 12rem;
-    }
-    .thumbnail.small figure {
-        display: block;
     }
     .thumbnail.large {
         grid-column: auto / span 2;

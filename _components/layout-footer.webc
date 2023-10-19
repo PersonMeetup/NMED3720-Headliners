@@ -1,11 +1,18 @@
 <footer webc:root="override">
-    <p>This work is licensed under a<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
-    <p>Built by Leslie "<a href="https://personmeetup.ca/">Person Meetup</a>" Swan for "The Dynamic Web" course at the<a href="https://www.ulethbridge.ca/">University of Lethbridge</a></p>
-    <p>For more information, check the project's GitHub respository</p>
+    <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
+    <p>Built by Leslie "<a href="https://personmeetup.ca/">Person Meetup</a>" Swan for "The Dynamic Web" course at the <a href="https://www.ulethbridge.ca/">University of Lethbridge</a></p>
+    <p>For more information, check out the project's <a href="https://github.com/PersonMeetup/NMED3720-Headliners">GitHub respository</a></p>
 </footer>
 <style webc:scoped>
     :host {
         background-color: var(--clr-neutral-50);
         border-top: solid 0.25rem var(--clr-neutral-500);
+        padding: 2.25rem 0.75rem;
+    }
+    :host p {
+        text-align: center;
+        margin-bottom: 0.25em;
+        font-weight: 475;
+        font-style: italic;
     }
 </style>
